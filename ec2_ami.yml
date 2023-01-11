@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+
+   - name: Basic AMI Creation
+     amazon.aws.ec2_ami:
+       instance_id: "i-0a9c26050116f6c27"
+       wait: yes
+       wait_timeout: 1800
+       name: MOS-Flight-v{{ version }}
+       region: eu-west-2
+       tags:
+         Name: MOS-Microservices-flight-v{{ version }}
+         Service: MOS-Microservices
+     register: ami
+
+
+
+   - name: save result
+     local_action:  copy content={{ ami }} dest=/root/ansible_flight/ami
+   
