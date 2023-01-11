@@ -33,7 +33,7 @@ EOF
 chmod 400 /root/.ssh/id_rsa
 
 apt update
-apt install git make
+apt install git make -y
 cd /usr/local/src/
 git clone git@bitbucket.org:moresand/mos-cmb-bandc-worker.git
 cd /usr/local/src/mos-cmb-bandc-worker
