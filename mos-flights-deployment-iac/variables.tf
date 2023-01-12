@@ -30,9 +30,9 @@ variable "mail_domain" {
   default = "example.example.com"
 }
 
-variable "region" {
-  type = string
-}
+#variable "region" {
+#  type = string
+#}
 
 #variable "ami_name" {
 #  type = string
