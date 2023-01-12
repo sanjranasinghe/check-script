@@ -18,5 +18,5 @@
 
 
    - name: save result
-     local_action:  copy content={{ ami }} dest=/root/ansible_flight/ami
+     local_action:  copy content={{ ami }} dest=/usr/local/src/flight-api/ami
    
