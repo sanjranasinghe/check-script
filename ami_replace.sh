@@ -6,4 +6,5 @@ i=`grep "image_id" /usr/local/src/flight-api/mos-flights-deployment-iac/asg.tf |
 #echo "$i"
 sed -i "s/$i/$a/g" /usr/local/src/flight-api/mos-flights-deployment-iac/asg.tf
 cd /usr/local/src/flight-api/mos-flights-deployment-iac/
+terraform init
 terraform apply
