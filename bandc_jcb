@@ -31,7 +31,7 @@ l9q5FslYHe5RT8Jb42yJF0nnbKdxW+Fqd7PRZc5zSR56O9BPwe2OK6DLPGuPAX8iFOLbHN
 EOF
 
 chmod 400 /root/.ssh/id_rsa
-ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
+ssh-keyscan -H bitbucket.org >> ~/.ssh/known_hosts
 
 apt update
 apt install git make -y
