@@ -20,9 +20,9 @@
    
     
    - name: save result
-     local_action:  copy content={{ ec2 }} dest=/root/ansible_flight/instance_details
+     local_action:  copy content={{ ec2 }} dest=/usr/local/src/test/instance_details
 
    - name: instance_replace
-     shell: sh /root/ansible_flight/instance_replace.sh
+     shell: sh /usr/local/src/test/instance_replace.sh
 
    
