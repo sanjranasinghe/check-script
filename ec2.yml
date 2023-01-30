@@ -6,7 +6,7 @@
    - name: launching aws
      amazon.aws.ec2_instance:
        name: "public-compute-instance"
-       image_id: "ami-050949f5d3aede071"
+       image_id: "ami-07ac0a74d21a3174c"
        key_name: "sanjaya"
        region: ap-southeast-1
        count: 1
