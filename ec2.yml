@@ -18,9 +18,9 @@
    
     
    - name: save result
-     local_action:  copy content={{ ec2 }} dest=/"$PWD"/instance_details
+     local_action:  copy content={{ ec2 }} dest=/var/lib/jenkins/workspace/Deployment/instance_details
 
    - name: instance_replace
-     shell: sh /"$PWD"/instance_replace.sh
+     shell: sh /var/lib/jenkins/workspace/Deployment/instance_replace.sh
 
    
