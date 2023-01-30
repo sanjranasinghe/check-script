@@ -9,7 +9,7 @@
        wait: yes
        wait_timeout: 1800
        name: MOS-Flight-v{{ version }}
-       region: eu-west-2
+       region: ap-southeast-1
        tags:
          Name: MOS-Microservices-flight-v{{ version }}
          Service: MOS-Microservices
