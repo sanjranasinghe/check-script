@@ -9,10 +9,8 @@
        image_id: "ami-050949f5d3aede071"
        key_name: "sanjaya"
        region: eu-west-2
-       security_group: allow-local-ssh
        count: 1
        instance_type: t2.micro
-       vpc_subnet_id: subnet-03e49d56fe3d6eaf3
        wait: yes
        user_data: "{{ lookup('file', '{{ script }}') }}"
      register: ec2
