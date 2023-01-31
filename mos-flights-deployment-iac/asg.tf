@@ -1,5 +1,5 @@
 resource "aws_launch_template" "foobar" {
-  name_prefix   = var.lunch_name
+  name_prefix   = "foobar"
   image_id      = "ami-0ecbbc82eb6075d47"
   instance_type = "t2.micro"
 
