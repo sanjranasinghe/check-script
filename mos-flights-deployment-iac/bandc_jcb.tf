@@ -16,7 +16,7 @@ resource "aws_launch_template" "bandc" {
   }
 }
 
-resource "aws_autoscaling_group" "bar" {
+resource "aws_autoscaling_group" "bandc_asg" {
   availability_zones = ["eu-west-2a"]
   desired_capacity   = 1
   max_size           = 1
