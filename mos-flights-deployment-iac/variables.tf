@@ -38,8 +38,7 @@ variable "mail_domain" {
 #  type = string
 #}
 
-variable "lunch_name" {
+variable "ami_id_bandc" {
   type    = string
-  default = "flighapi"
 }
 
