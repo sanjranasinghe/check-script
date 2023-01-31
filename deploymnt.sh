@@ -12,4 +12,7 @@ echo $next_n
 ansible-playbook ec2.yml --extra-vars "script=$1"
 sleep 1m
 ansible-playbook ec2_ami.yml --extra-vars "version=$next_n"
+cd /usr/local/src/flight-api/mos-flights-deployment-iac/
+terraform init
+terraform apply -auto-approve
 
