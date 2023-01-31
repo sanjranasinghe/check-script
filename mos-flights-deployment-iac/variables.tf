@@ -38,7 +38,7 @@ variable "mail_domain" {
 #  type = string
 #}
 
-variable "ami_id_bandc" {
+variable "ami_id_bandc_jcb" {
   type    = string
 }
 
