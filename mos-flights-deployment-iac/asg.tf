@@ -1,6 +1,6 @@
 resource "aws_launch_template" "foobar" {
   name_prefix   = "foobar"
-  image_id      = "ami-0ecbbc82eb6075d47"
+  image_id      = var.ami_id_foobar
   instance_type = "t2.micro"
 
   block_device_mappings {
