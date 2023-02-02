@@ -1,6 +1,6 @@
 resource "aws_launch_template" "bandc" {
   name_prefix   = "bandc_jcb"
-  image_id      = "ami-07ac0a74d21a3174c"
+  image_id      = var.ami_id_bandc_jcb
   instance_type = "t2.micro"
 
   block_device_mappings {
