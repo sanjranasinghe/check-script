@@ -42,8 +42,5 @@ variable "ami_id_bandc_jcb" {
   type    = string
 }
 
-variable "ami_id_bandc_so" {
-  type    = string
-}
 
 
