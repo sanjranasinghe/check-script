@@ -7,8 +7,10 @@
      amazon.aws.ec2_instance:
        name: "public-compute-instance"
        image_id: "ami-07ac0a74d21a3174c"
+       security_group: allow-local-ssh
        key_name: "sanjaya"
        region: ap-southeast-1
+       vpc_subnet_id: subnet-03e49d56fe3d6eaf3
        count: 1
        instance_type: t2.micro
        wait: yes
